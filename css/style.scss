@@ -14,20 +14,23 @@ body {
 
 
 .hero {
-  background-color: #000000;
+  
   color: #ffffff;
-  border-radius: 0 0 80px 80px;
+  
   min-height: 800px;
   padding-top: 12px;
   position: relative;
-  overflow: hidden;
+  
   width: 100%;
   &__video {
     position: absolute;
+    background-color: #000000;
+    border-radius: 0 0 80px 80px;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 800px;
     // z-index: -1;
 
     &:after {
@@ -95,6 +98,14 @@ body {
   .wrapper {
     position: relative;
     z-index: 5;
+  }
+  &__full-image {
+    position: relative;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
